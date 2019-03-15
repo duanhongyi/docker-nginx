@@ -6,7 +6,6 @@ services:
     container_name: nginx
     volumes:
       - /opt/nginx:/etc/nginx
-      - /var/log/nginx:/var/log/nginx
     ports:
       - "80:80"
       - "443:443"
