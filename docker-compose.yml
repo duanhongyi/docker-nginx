@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:stable
+    container_name: nginx
+    volumes:
+      - /opt/nginx:/etc/nginx
+      - /var/log/nginx:/var/log/nginx
+    ports:
+      - "80:80"
+      - "443:443"
+      - "2222:2222"
+      - "9090:9090"
+    restart: always
